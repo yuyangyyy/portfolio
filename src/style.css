@@ -1,0 +1,173 @@
+body {
+  background-color: #282a35;
+  color:salmon ;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h3{
+  padding-left: 16px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1.2px;
+}
+nav {
+  height: 50px;
+  width: 500px;
+/*  font-weight:normal ; */
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  color:white;
+  text-decoration: none;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+
+}
+nav li {
+  text-align: center;
+  list-style: none;
+}
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+.home_global {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.home_title {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 200px;
+  padding: 80px;
+}
+.hello {
+/*   font-weight:normal ; */
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  color:white;
+
+}
+.para {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+/*   font-weight:normal ; */
+  line-height: 1.8;
+  letter-spacing: 1.2px;
+  color:white;
+}
+
+.para_projet {
+  padding-left: 16px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 1.2px;
+/*   font-weight: lighter; */
+  color:white;
+}
+.big_para{
+  margin: 0 auto;
+  width: 800px;
+}
+.surname {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.picture {
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 280px;
+  height: 380px;
+}
+.picture {
+  width: 280px;
+  height: 380px;
+}
+.tech_logo{
+  display:flex;
+  flex-direction: column;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_language img {
+  max-width: 80px;
+  padding: 30px;
+}
+
+.para_projet{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  padding-bottom: 30px;
+
+}
+.all_projet{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color:white;
+  padding-bottom: 30px;
+  width: 1100px;
+  height: auto;
+  border: 2px solid red;
+}
+.ten_pro{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #282a35;
+  border-radius: 12px;
+  color:grey;
+  width: 280px;
+  height: 360px;
+  margin-top: 30px;
+
+}
+.ten_pro img{
+  background-color:grey;
+  width: 180px;
+  height: 100px;
+}
+.pres{
+  font-size: 12px;
+ text-align: center;
+line-height: 1.8;
+letter-spacing: 1.2px;
+}
+.glob_btn{
+  display: flex;
+}
+.first_btn {
+  padding: 4px;
+  background-color:white;
+
+}
+.second_btn{
+  padding: 4px;
+  background-color:white;
+
+}
+.contact_icon{
+
+  margin-top: 40px;
+}
+.home_social{
+  display:flex;
+  justify-content: center;
+
+  margin-top: 40px;
+
+}
+.icone_social{
+  width: 40px;
+  height: 38px;
+  padding-left: 30px;
+}
