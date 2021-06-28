@@ -211,7 +211,7 @@ nav li a {
   font-size: 15px;
 }
 
-.picture {
+/* .picture {
   width: 200px;
   height: 280px;
   border: 2px solid red;
@@ -231,6 +231,4 @@ nav li a {
   justify-self: self;
   border: 2px solid greenyellow;
 }
-h3 {
-  display: flex;
-}
+ */
