@@ -8,7 +8,11 @@ h3 {
   padding-left: 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
   letter-spacing: 1.2px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
+
 nav {
   height: 50px;
   width: 500px;
@@ -19,14 +23,17 @@ nav {
   text-decoration: none;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 nav ul {
   display: flex;
   justify-content: space-evenly;
 }
+
 nav li {
   text-align: center;
   list-style: none;
 }
+
 nav li a {
   color: white;
   text-decoration: none;
@@ -36,6 +43,7 @@ nav li a {
   justify-content: center;
   padding-bottom: 80px;
 }
+
 .home_title {
   display: flex;
   flex-direction: column;
@@ -44,14 +52,15 @@ nav li a {
   padding: 80px;
 }
 .hello {
-  /*   font-weight:normal ; */
+  font-size: 16px;
   line-height: 1.8;
   letter-spacing: 1.2px;
   color: white;
 }
+
 .para {
   font-family: Georgia, "Times New Roman", Times, serif;
-  /*   font-weight:normal ; */
+  font-size: 14px;
   line-height: 1.8;
   letter-spacing: 1.2px;
   color: white;
@@ -61,9 +70,9 @@ nav li a {
   padding-left: 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
   letter-spacing: 1.2px;
-  /*   font-weight: lighter; */
   color: white;
 }
+
 .big_para {
   margin: 0 auto;
   width: 800px;
@@ -74,6 +83,7 @@ nav li a {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 .picture {
   border: 2px solid white;
   border-radius: 8px;
@@ -84,6 +94,7 @@ nav li a {
   width: 280px;
   height: 380px;
 }
+
 .tech_logo {
   display: flex;
   flex-direction: column;
@@ -106,11 +117,15 @@ nav li a {
 }
 
 /* Projects */
+.glob_projet {
+  align-items: center;
+}
 
 .para_projet {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .all_projet {
@@ -118,9 +133,11 @@ nav li a {
   flex-wrap: wrap;
   justify-content: space-evenly;
   background-color: white;
+  padding-top: 30px;
   padding-bottom: 30px;
-  width: 1100px;
+  /*   width: 1100px; */
   height: auto;
+  align-items: center;
 }
 
 .all_projet .projects_btns {
@@ -135,16 +152,18 @@ nav li a {
   background-color: #282a35;
   border-radius: 12px;
   color: grey;
-  width: 280px;
-  height: 360px;
-  margin-top: 30px;
-  border: 1px solid blue;
+  width: 320px;
+  height: 320px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
+
 .ten_pro img {
-  background-color: grey;
+  background-color: white;
   width: 180px;
   height: 100px;
 }
+
 .pres {
   font-size: 12px;
   text-align: center;
@@ -156,6 +175,7 @@ nav li a {
   padding: 4px;
   background-color: white;
 }
+
 .second_btn {
   padding: 4px;
   background-color: white;
@@ -166,11 +186,51 @@ nav li a {
 .home_social {
   display: flex;
   justify-content: center;
-
-  margin-top: 40px;
+  margin-top: 30px;
 }
+
 .icone_social {
   width: 40px;
   height: 38px;
   padding-left: 30px;
+}
+.infoemail {
+  color: black;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 800px) {
+}
+.surname {
+  font-size: 20px;
+}
+
+.hello {
+  font-size: 15px;
+}
+
+.picture {
+  width: 200px;
+  height: 280px;
+  border: 2px solid red;
+}
+.home_global {
+  border: 2px solid green;
+  text-align: center;
+  width: 700px;
+  height: auto;
+}
+#projet {
+  display: flex;
+  justify-items: center;
+}
+.glob_projet {
+  display: flex;
+  justify-self: self;
+  border: 2px solid greenyellow;
+}
+h3 {
+  display: flex;
 }
