@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "build:styles": "lessc styles/index.less styles/index.css",
+    "watch:styles": "nodemon -x \"npm run build:styles\" styles/index.less",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyangyyy/portfolio.git"
+  },
+  "author": "Yu Yang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuyangyyy/portfolio/issues"
+  },
+  "homepage": "https://github.com/yuyangyyy/portfolio#readme",
+  "devDependencies": {
+    "less": "^4.1.1",
+    "nodemon": "^2.0.7"
+  }
+}
