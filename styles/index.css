@@ -132,7 +132,7 @@ main .projects > .logos .logo {
   padding: 10px;
   margin: 10px;
   max-width: 280px;
-  height: 550px;
+  height: 500px;
 }
 main .projects > .logos .logo .logo-content {
   display: flex;
