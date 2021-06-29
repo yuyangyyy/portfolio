@@ -1,245 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/libs/animate.js"></script>
+    <script src="scripts/index.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="scripts/animate.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/index.css" />
 
-  <link rel="stylesheet" href="styles/index.css" />
+    <title>Yu Yang's portfolio</title>
+  </head>
 
-  <title>Le portfolio de Yu Yang</title>
-</head>
+  <body id="contact">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#apropos">A propos</a></li>
-        <li><a href="#projet">Projets</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <div class="presentation">
+        <div class="summary">
+          <p>Hello, je suis</p>
+          <h1 class="utils-nowrap">Yang Yu</h1>
+          <p>
+            En recherche d'une alternance dans le développement Web/FullStack.
+          </p>
 
-  <main>
-    <div class="presentation">
-      <div class="summary">
-        <div class="hello">Hello, je suis</div>
-        <h1>Yang Yu</h1>
-        <div class="hello">
-          En recherche d'une alternance en développement Web FullStack
+          <div class="social-medias">
+            <div class="logos">
+              <a href="https://www.linkedin.com/in/yang-yu-56ab0040/">
+                <img
+                  src=" ./img/linkedin-icon.png"
+                  alt="LinkedIn"
+                  tilte="LinkedIn"
+                />
+              </a>
+              <a href="https://github.com/yuyangyyy">
+                <img src=" ./img/github-icon.png" alt="GitHub" tilte="GitHub" />
+              </a>
+              <a href="#">
+                <img class="email-icon" src=" ./img/email-icon.png" alt="Email" tilte="Email" />
+              </a>
+            </div>
+          </div>
         </div>
+
+        <div class="photo">
+          <img
+            class="picture"
+            src="./img/image.jpg"
+            alt="Moi dans les Alpes"
+            title="Moi dans les Alpes"
+          />
+        </div>
+
+
       </div>
 
-      <div class="photo">
-        <img class="picture" src="./img/image.jpg" alt="Une photo de Yang" title="photoyang" />
+      <div id="about" class="about-me">
+        <h2>A propos</h2>
+
+        <p>Je m'appelle Yang et je suis une développeuse fullstack junior.</p>
+
+        <p>
+          Je suis en <strong>reconversion professionelle</strong>, j'ai suivi
+          une formation intensive dans le développement web et mobile
+          (équivalent Bac+2) à la Wild Code school en septembre 2020.
+        </p>
+
+        <p>
+          Je suis actuellement en stage à Tenable, une entreprise américaine
+          spécialisée dans la cybersécurité.
+        </p>
+
+        <p>
+          Je souhaite continuer une formation
+          <strong>en alternance</strong> pour enrichir mon expérience. Je suis
+          donc à la recherche d'une entreprise pour une durée
+          <strong>d'une année à partir de septembre 2021</strong>.
+        </p>
       </div>
-    </div>
 
-    <div class="about-me">
-      <h2>A propos</h2>
+      <div id="skills" class="skills">
+        <h2>Compétences</h2>
 
-      <p>
-        Je m'apelle Yang ==> développeur fullstack junior.<br />
-        Je suis en reconversion professionelle, j'ai suivi une formation
-        intensive en développeur web et web mobile (Bac+2) à la Wild Code
-        school en septembre 2020. Actuellement, en stage à Tenable entreprise
-        spécialisée dans la cybersécurité.
-      </p>
-
-      <p>
-        Je vais continer une formation avec la Wild Code School en alternance
-        le développeur web avancé, je suis à la recherche d'une entreprise
-        pour une durée de 1 an à partir du septembre 2021.
-      </p>
-    </div>
-
-    <div class="technical-stack">
-      <h2 class="stack">Stack technique</h2>
-
-      <div class="logos">
-        <div class="logos-row">
+        <div class="logos">
           <img src="./img/htmlimg.jpg" alt="htmlimg" title="htmlimg" />
           <img src="./img/cssimg.jpg" alt="cssimg" title="cssimg" />
           <img src="./img/jsimg.jpg" alt="jsimg" title="jsimg" />
           <img src="./img/tsimg.jpg" alt="tsimg" title="tsimg" />
           <img src="./img/reactimg.jpg" alt="reactimg" title="reactimg" />
           <img src="./img/nodejsimg.jpg" alt="nodejsimg" title="nodejsimg" />
-        </div>
-
-        <div class="logos-row">
           <img src="./img/mysqlimg.jpg" alt="mysqlimg" title="mysqlimg" />
           <img src="./img/gitimg.jpg" alt="gitimg" title="gitimg" />
           <img src="./img/githubimg.jpg" alt="githubimg" title="githubimg" />
           <img src="./img/vscodeimg.jpg" alt="vscodeimg" title="vscodeimg" />
-          <img src="./img/workbenchimg.jpg" alt="workbenchimg" title="workbenchimg" />
+          <img
+            src="./img/workbenchimg.jpg"
+            alt="workbenchimg"
+            title="workbenchimg"
+          />
           <img src="./img/postmanimg.jpg" alt="postmanimg" title="postmanimg" />
         </div>
       </div>
 
-      <div class="projects">
+      <div id="projects" class="projects">
         <h2>Projets</h2>
 
+        <p class="utils-center">
+          Quelques projets ont réalisé pendant ma formation ainsi que un projet
+          de stage en cours.
+        </p>
+
         <div class="logos">
-          <p>Quelques projets ont réalisé pendant ma formation ainsi que un projet
-            de stage en cours.</p>
+          <!-- Tenable -->
 
-          <div class="logos-row">
-            <!-- Tenable -->
+          <div class="logo">
+            <img src="./img/tenable.jpg" alt="Tenable" title="Tenable" />
 
-            <div class="logo">
-              <img src="./img/tenable.jpg" alt="Tenable" title="Tenable" />
+            <div class="logo-content">
+              <div>
+                <h3>Tenable</h3>
 
-              <div class="logo-content">
-                <div>
-                  <h3>Tenable</h3>
-
-                  <p>C'est une entreprise dans le spécilaité cybersecurité, le produit
-                    de Tenable.ad protege le cyberattaque.</p>
-                  <p>C'est un projet de stage , il s'agit d'une création d'un lib
-                    interne. le projet en cours de réalisation</p>
-                </div>
-
-                <div class="links">
-                  <a href="https://fr.tenable.com/products/tenable-ad">Voir le site</a>
-                </div>
+                <p>
+                  C'est une entreprise dans le spécilaité cybersecurité, le
+                  produit de Tenable.ad protege le cyberattaque.
+                </p>
+                <p>
+                  C'est un projet de stage , il s'agit d'une création d'un lib
+                  interne. le projet en cours de réalisation
+                </p>
               </div>
-            </div>
 
-            <!-- Media Pro -->
-
-            <div class="logo">
-              <img src="./img/media.jpg" alt="MediaTransports" title="MediaTransports" />
-
-              <div class="logo-content">
-                <div>
-                  <h3>MediaTransports</h3>
-
-                  <p>C'est une entreprise dans le spécilaité affiachage.</p>
-                  <p>C'est un projet client, il s'agit d'une création d'un intranet. le
-                    projet en cours de réalisation</p>
-                </div>
-
-                <div class="links">
-                  <a href="http://www.mediatransports.com/">Voir le site</a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Eatogether -->
-
-            <div class="logo">
-              <img src="./img/eat.jpg" alt="Eatogether" title="Eatogether" />
-
-              <div class="logo-content">
-                <div>
-                  <h3>Eatogether</h3>
-
-                  <p>C'est une entreprise dans le spécilaité cybersecurité, le produit
-                    de Tenable.ad protege le cyberattaque.</p>
-                  <p>C'est un projet de l'école , il s'agit d'une création d'un lib
-                    interne. le projet en cours de réalisation</p>
-                </div>
-
-                <div class="links">
-                  <a href="https://github.com/yuyangyyy/eatogether">Voir le site</a>
-                </div>
+              <div class="links">
+                <a href="https://fr.tenable.com/products/tenable-ad"
+                  >Voir le site</a
+                >
               </div>
             </div>
           </div>
 
-          <div class="logos-row">
-            <!-- Pokefight -->
+          <!-- Media Pro -->
 
-            <div class="logo">
-              <img src="./img/pokemon.jpg" alt="Pokefight" title="Pokefight" />
+          <div class="logo">
+            <img
+              src="./img/media.jpg"
+              alt="MediaTransports"
+              title="MediaTransports"
+            />
 
-              <div class="logo-content">
-                <div>
-                  <h3>Pokemon</h3>
+            <div class="logo-content">
+              <div>
+                <h3>MediaTransports</h3>
 
-                  <p>C'est une entreprise dans le spécilaité cybersecurité, le produit
-                    de Tenable.ad protege le cyberattaque.</p>
-                  <p>C'est un projet de l'école , il s'agit d'une création d'un lib
-                    interne. le projet en cours de réalisation</p>
-                </div>
+                <p>C'est une entreprise dans le spécilaité affiachage.</p>
+                <p>
+                  C'est un projet client, il s'agit d'une création d'un
+                  intranet. le projet en cours de réalisation
+                </p>
+              </div>
 
-                <div class="links">
-                  <a href="https://github.com/yuyangyyy/pokefight">Voir le site</a>
-                </div>
+              <div class="links">
+                <a href="http://www.mediatransports.com/">Voir le site</a>
               </div>
             </div>
+          </div>
 
-            <!-- Ichi Ni San -->
+          <!-- Eatogether -->
 
-            <div class="logo">
-              <img src="./img/the.jpg" alt="Ichi Ni San" title="Ichi Ni San" />
+          <div class="logo">
+            <img src="./img/eat.jpg" alt="Eatogether" title="Eatogether" />
 
-              <div class="logo-content">
-                <div>
-                  <h3>Ichi Ni San</h3>
+            <div class="logo-content">
+              <div>
+                <h3>Eatogether</h3>
 
-                  <p>C'est une entreprise dans le spécilaité cybersecurité, le produit
-                    de Tenable.ad protege le cyberattaque.</p>
-                  <p>C'est un projet de l'école , il s'agit d'une création d'un lib
-                    interne. le projet en cours de réalisation</p>
-                </div>
+                <p>
+                  C'est une entreprise dans le spécilaité cybersecurité, le
+                  produit de Tenable.ad protege le cyberattaque.
+                </p>
+                <p>
+                  C'est un projet de l'école , il s'agit d'une création d'un lib
+                  interne. le projet en cours de réalisation
+                </p>
+              </div>
 
-                <div class="links">
-                  <a href="https://ichinisan.herokuapp.com/categorie/drinks">Voir le site</a>
-                  <a href="https://github.com/yuyangyyy/hackathon-03">Voir le code</a>
-                </div>
+              <div class="links">
+                <a href="https://github.com/yuyangyyy/eatogether"
+                  >Voir le site</a
+                >
               </div>
             </div>
+          </div>
 
-            <!-- Whack-A-Virus -->
+          <!-- Pokefight -->
 
-            <div class="logo">
-              <img src="./img/virus.jpg" alt="Virus" title="Virus" />
+          <div class="logo">
+            <img src="./img/pokemon.jpg" alt="Pokefight" title="Pokefight" />
 
-              <div class="logo-content">
-                <div>
-                  <h3>Whack-A-Virus</h3>
+            <div class="logo-content">
+              <div>
+                <h3>Pokemon</h3>
 
-                  <p>C'est une entreprise dans le spécilaité cybersecurité, le produit
-                    de Tenable.ad protege le cyberattaque.</p>
-                  <p>C'est un projet de l'école , il s'agit d'une création d'un lib
-                    interne. le projet en cours de réalisation</p>
-                </div>
+                <p>
+                  C'est une entreprise dans le spécilaité cybersecurité, le
+                  produit de Tenable.ad protege le cyberattaque.
+                </p>
+                <p>
+                  C'est un projet de l'école , il s'agit d'une création d'un lib
+                  interne. le projet en cours de réalisation
+                </p>
+              </div>
 
-                <div class="links">
-                  <a href="https://condescending-hypatia-22b592.netlify.app">Voir le site</a>
-                  <a href="https://github.com/jerkodeur/whack-a-virus">Voir le code</a>
-                </div>
+              <div class="links">
+                <a href="https://github.com/yuyangyyy/pokefight"
+                  >Voir le site</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Ichi Ni San -->
+
+          <div class="logo">
+            <img src="./img/the.jpg" alt="Ichi Ni San" title="Ichi Ni San" />
+
+            <div class="logo-content">
+              <div>
+                <h3>Ichi Ni San</h3>
+
+                <p>
+                  C'est une entreprise dans le spécilaité cybersecurité, le
+                  produit de Tenable.ad protege le cyberattaque.
+                </p>
+                <p>
+                  C'est un projet de l'école , il s'agit d'une création d'un lib
+                  interne. le projet en cours de réalisation
+                </p>
+              </div>
+
+              <div class="links">
+                <a href="https://ichinisan.herokuapp.com/categorie/drinks"
+                  >Voir le site</a
+                >
+                <a href="https://github.com/yuyangyyy/hackathon-03"
+                  >Voir le code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Whack-A-Virus -->
+
+          <div class="logo">
+            <img src="./img/virus.jpg" alt="Virus" title="Virus" />
+
+            <div class="logo-content">
+              <div>
+                <h3>Whack-A-Virus</h3>
+
+                <p>
+                  C'est une entreprise dans le spécilaité cybersecurité, le
+                  produit de Tenable.ad protege le cyberattaque.
+                </p>
+                <p>
+                  C'est un projet de l'école , il s'agit d'une création d'un lib
+                  interne. le projet en cours de réalisation
+                </p>
+              </div>
+
+              <div class="links">
+                <a href="https://condescending-hypatia-22b592.netlify.app"
+                  >Voir le site</a
+                >
+                <a href="https://github.com/jerkodeur/whack-a-virus"
+                  >Voir le code</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-
-  <footer>
-    <h2>Me contacter</h2>
-
-    <div class="logos">
-      <a href="https://www.linkedin.com/in/yang-yu-56ab0040/"><img src=" ./img/linkedin.jpg" alt="LinkedIn"
-          tilte="LinkedIn" /></a>
-      <a href="https://github.com/yuyangyyy"><img src=" ./img/github.jpg" alt="GitHub" tilte="GitHub" /></a>
-    </div>
-
-    <p>Pour toutes les informations supplémentaies, envoyer email à
-      <strong>yuyangyyy@gmail.com</strong>
-    </p>
-  </footer>
-</body>
-
+    </main>
+  </body>
 </html>

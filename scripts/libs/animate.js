@@ -1,6 +1,7 @@
 jQuery(($) => {
   // The speed of the scroll in milliseconds
   const speed = 1000;
+  const navHeight = 100;
 
   $('a[href*="#"]')
     .filter(
@@ -15,8 +16,11 @@ jQuery(($) => {
 
       if (targetElement) {
         event.preventDefault();
+
         $("html, body").animate(
-          { scrollTop: $(targetElement).offset().top },
+          {
+            scrollTop: $(targetElement).offset().top - navHeight,
+          },
           speed
         );
       }

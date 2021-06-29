@@ -1,48 +1,77 @@
 @import "normalize.css";
+.utils-nowrap {
+  white-space: nowrap;
+}
+.utils-center {
+  text-align: center;
+}
 * {
   box-sizing: border-box;
 }
 body {
   background-color: #282a35;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.1em;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.9em;
   color: white;
   line-height: 1.4em;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-/* Links */
-a {
-  color: white;
+@media (min-width: 360px) {
+  body {
+    font-size: 1.1em;
+  }
 }
 /* Titles */
 h1 {
   font-weight: normal;
-  font-size: 50px;
+  color: salmon;
 }
 h2 {
   text-align: center;
   margin-block-start: 2em;
   margin-block-end: 1.5em;
 }
-header,
-main,
-footer {
-  width: 1024px;
+/* Links */
+a {
+  color: white;
+}
+/* Misc */
+strong {
+  color: salmon;
+  font-weight: normal;
+}
+main {
+  width: 100%;
+  margin-top: 100px;
+  padding: 15px;
+}
+@media (min-width: 1024px) {
+  main {
+    max-width: 1024px;
+  }
 }
 /* Header */
 header {
-  margin-bottom: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  border-top: 2px solid #282a35;
 }
 header nav ul {
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
 }
 header nav ul li {
   list-style: none;
+  white-space: nowrap;
 }
 header nav ul li a {
+  color: #282a35;
   text-decoration: none;
   font-weight: bold;
 }
@@ -55,68 +84,72 @@ main .presentation {
   justify-content: space-evenly;
   text-align: right;
 }
-main .presentation img {
-  max-width: 200px;
+main .presentation .photo img {
+  margin: 0 15px;
+  max-width: 150px;
 }
-main .technical-stack > .logos .logos-row {
+@media (min-width: 360px) {
+  main .presentation .photo img {
+    max-width: 200px;
+  }
+}
+main .presentation .social-medias {
+  margin-top: 35px;
+}
+main .presentation .social-medias .logos {
+  display: flex;
+  justify-content: flex-end;
+}
+main .presentation .social-medias .logos img {
+  max-width: 50px;
+  margin-left: 10px;
+}
+main .skills > .logos {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-flow: row wrap;
 }
-main .technical-stack > .logos img {
+main .skills > .logos img {
   width: 150px;
   padding: 25px;
 }
 main .projects {
   font-size: 0.9em;
 }
-main .projects > .logos .logos-row {
+main .projects > .logos {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }
-main .projects > .logos .logos-row .logo {
+main .projects > .logos .logo {
   background-color: white;
   color: #282a35;
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 10px;
-  max-width: 350px;
+  max-width: 320px;
   height: 450px;
 }
-main .projects > .logos .logos-row .logo .logo-content {
+main .projects > .logos .logo .logo-content {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
 }
-main .projects > .logos .logos-row .logo h3 {
+main .projects > .logos .logo h3 {
   text-align: center;
 }
-main .projects > .logos .logos-row .logo img {
+main .projects > .logos .logo img {
   max-width: 320px;
   max-height: 150px;
-  padding: 25px;
 }
-main .projects > .logos .logos-row .logo a {
+main .projects > .logos .logo a {
   color: #282a35;
 }
-main .projects > .logos .logos-row .logo .links {
+main .projects > .logos .logo .links {
   display: flex;
   justify-content: space-around;
-}
-/* Footer */
-footer {
-  text-align: center;
-  margin-bottom: 25px;
-}
-footer .logos {
-  display: flex;
-  justify-content: center;
-}
-footer .logos img {
-  max-width: 100px;
-  max-height: 100px;
-  padding: 25px;
 }
