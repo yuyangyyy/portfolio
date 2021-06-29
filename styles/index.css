@@ -59,6 +59,7 @@ header {
   top: 0;
   left: 0;
   background-color: white;
+  box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.5);
   border-top: 3px solid #282a35;
 }
 header nav ul {
@@ -127,12 +128,13 @@ main .projects > .logos {
 main .projects > .logos .logo {
   background-color: white;
   color: #282a35;
+  box-shadow: -1px 0px 8px 2px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 10px;
   max-width: 280px;
-  height: 500px;
+  height: 530px;
 }
 main .projects > .logos .logo .logo-content {
   display: flex;
@@ -144,7 +146,7 @@ main .projects > .logos .logo h3 {
   text-align: center;
 }
 main .projects > .logos .logo img {
-  max-height: 150px;
+  height: 150px;
 }
 main .projects > .logos .logo a {
   color: #282a35;
