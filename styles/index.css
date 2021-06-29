@@ -103,7 +103,7 @@ main .presentation .social-medias .logos {
   justify-content: flex-end;
 }
 main .presentation .social-medias .logos img {
-  max-width: 50px;
+  max-width: 30px;
   margin-left: 10px;
 }
 main .skills > .logos {
