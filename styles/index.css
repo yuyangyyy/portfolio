@@ -59,7 +59,7 @@ header {
   top: 0;
   left: 0;
   background-color: white;
-  border-top: 2px solid #282a35;
+  border-top: 3px solid #282a35;
 }
 header nav ul {
   display: flex;
@@ -74,9 +74,10 @@ header nav ul li a {
   color: #282a35;
   text-decoration: none;
   font-weight: bold;
+  padding-bottom: 3px;
 }
 header nav ul li a:hover {
-  text-decoration: underline;
+  text-decoration: underline salmon;
 }
 /* Main content */
 main .presentation {
@@ -115,7 +116,7 @@ main .skills > .logos img {
   padding: 25px;
 }
 main .projects {
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 main .projects > .logos {
   display: flex;
@@ -130,8 +131,8 @@ main .projects > .logos .logo {
   flex-direction: column;
   padding: 10px;
   margin: 10px;
-  max-width: 320px;
-  height: 450px;
+  max-width: 280px;
+  height: 550px;
 }
 main .projects > .logos .logo .logo-content {
   display: flex;
@@ -143,7 +144,6 @@ main .projects > .logos .logo h3 {
   text-align: center;
 }
 main .projects > .logos .logo img {
-  max-width: 320px;
   max-height: 150px;
 }
 main .projects > .logos .logo a {
