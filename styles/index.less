@@ -1,245 +1,166 @@
+@import (css) "normalize.css";
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #282a35;
-  color: salmon;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
 
-h3 {
-  padding-left: 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  letter-spacing: 1.2px;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-nav {
-  height: 50px;
-  width: 500px;
-  /*  font-weight:normal ; */
-  line-height: 1.8;
-  letter-spacing: 1.2px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1em;
   color: white;
-  text-decoration: none;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
+  line-height: 1.4em;
 
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-nav li {
-  text-align: center;
-  list-style: none;
-}
-
-nav li a {
-  color: white;
-  text-decoration: none;
-}
-.home_global {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 80px;
-}
-
-.home_title {
   display: flex;
   flex-direction: column;
-  width: 550px;
-  height: 200px;
-  padding: 80px;
+  align-items: center;
 }
-.hello {
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 1.2px;
+
+/* Links */
+
+a {
   color: white;
 }
 
-.para {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 14px;
-  line-height: 1.8;
-  letter-spacing: 1.2px;
-  color: white;
-}
+/* Titles */
 
-.para_projet {
-  padding-left: 16px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  letter-spacing: 1.2px;
-  color: white;
-}
-
-.big_para {
-  margin: 0 auto;
-  width: 800px;
-}
-.surname {
-  font-family: Georgia, "Times New Roman", Times, serif;
+h1 {
+  font-weight: normal;
   font-size: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
-.picture {
-  /*   border-radius: 18px; */
-  width: 280px;
-  height: 380px;
-}
-
-.tech_logo {
-  display: flex;
-  flex-direction: column;
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Technical stack */
-
-.logo_language {
+h2 {
   text-align: center;
+  margin-block-start: 2em;
+  margin-block-end: 1.5em;
 }
 
-.logo_language img {
-  max-width: 80px;
-  padding: 30px;
+header, main, footer {
+  width: 1024px;
 }
 
-/* Projects */
-.glob_projet {
-  align-items: center;
-}
+/* Header */
 
-.para_projet {
-  text-align: center;
-  font-size: 16px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-}
+header {
+  margin-bottom: 50px;
 
-.all_projet {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: white;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /*   width: 1100px; */
-  height: auto;
-  align-items: center;
-}
+  nav {
+    ul {
+      display: flex;
+      justify-content: space-evenly;
 
-.all_projet .projects_btns {
-  display: flex;
-}
+      li {
+        list-style: none;
 
-.all_projet .ten_pro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: #282a35;
-  border-radius: 12px;
-  color: grey;
-  width: 320px;
-  height: 320px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
+        a {
+          text-decoration: none;
+          font-weight: bold;
 
-.ten_pro img {
-  background-color: white;
-  width: 180px;
-  height: 100px;
-}
-
-.pres {
-  font-size: 12px;
-  text-align: center;
-  line-height: 1.8;
-  letter-spacing: 1.2px;
-}
-
-.first_btn {
-  padding: 4px;
-  background-color: white;
-}
-
-.second_btn {
-  padding: 4px;
-  background-color: white;
-}
-.contact_icon {
-  margin-top: 40px;
-}
-.home_social {
-  display: flex;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.icone_social {
-  width: 40px;
-  height: 38px;
-  padding-left: 30px;
-}
-.infoemail {
-  color: black;
-  text-align: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-@media screen and (max-width: 700px) {
-  body {
-    background-color: peru;
-    color: black;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
-  .home_global {
+}
+
+/* Main content */
+
+main {
+  .presentation {
     display: flex;
-    flex-direction: column;
-  }
-  .picture {
-    flex-direction: column;
-    padding-left: 130px;
+    justify-content: space-evenly;
+    text-align: right;
+
+    img {
+      max-width: 200px;
+    }
   }
 
-  .big_para {
-    border: 2px solid red;
+  .technical-stack {
+    > .logos {
+      .logos-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      img {
+        width: 150px;
+        padding: 25px;
+      }
+    }
+  }
+
+  .projects {
+    font-size: 0.9em;
+
+    > .logos {
+      .logos-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+          background-color: white;
+          color: #282a35;
+
+          display: flex;
+          flex-direction: column;
+
+          padding: 10px;
+          margin: 10px;
+
+          max-width: 350px;
+          height: 450px;
+
+          .logo-content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: space-between;
+          }
+
+          h3 {
+            text-align: center;
+          }
+
+          img {
+            max-width: 320px;
+            max-height: 150px;
+            padding: 25px;
+          }
+
+          a {
+            color: #282a35;
+          }
+
+          .links {
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+      }
+    }
   }
 }
-/* .surname {
-  font-size: 20px;
-}
 
-.hello {
-  font-size: 15px;
-} */
+/* Footer */
 
-/* .picture {
-  width: 200px;
-  height: 280px;
-  border: 2px solid red;
-}
-.home_global {
-  border: 2px solid green;
+footer {
   text-align: center;
-  width: 700px;
-  height: auto;
+  margin-bottom: 25px;
+
+  .logos {
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100px;
+      max-height: 100px;
+      padding: 25px;
+    }
+  }
 }
-#projet {
-  display: flex;
-  justify-items: center;
-}
-.glob_projet {
-  display: flex;
-  justify-self: self;
-  border: 2px solid greenyellow;
-}
- */
