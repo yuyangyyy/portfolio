@@ -7,12 +7,10 @@
 
 body {
   background-color: #282a35;
-
   font-family: "Nunito", sans-serif;
   font-size: 0.9em;
   color: white;
   line-height: 1.4em;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,13 +153,11 @@ main {
         background-color: white;
         color: #282a35;
         box-shadow: -1px 0px 8px 2px rgba(0, 0, 0, 0.75);
-
         display: flex;
         flex-direction: column;
-
-        padding: 10px;
-        margin: 10px;
-
+        padding: 20px;
+        margin: 15px;
+        text-align: justify;
         max-width: 280px;
         height: 530px;
 
@@ -187,6 +183,9 @@ main {
         .links {
           display: flex;
           justify-content: space-around;
+          :hover {
+            text-decoration: underline salmon;
+          }
         }
       }
     }
