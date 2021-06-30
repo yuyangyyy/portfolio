@@ -116,14 +116,12 @@ main .skills > .logos img {
   width: 150px;
   padding: 25px;
 }
-main .projects {
-  font-size: 0.8em;
-}
 main .projects > .logos {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  font-size: 0.8em;
 }
 main .projects > .logos .logo {
   background-color: white;
