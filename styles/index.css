@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #282a35;
+  background-color: black;
   font-family: "Nunito", sans-serif;
   font-size: 0.9em;
   color: white;
@@ -26,7 +26,7 @@ body {
 /* Titles */
 h1 {
   font-weight: normal;
-  color: salmon;
+  color: #fa9938;
 }
 h2 {
   text-align: center;
@@ -39,7 +39,7 @@ a {
 }
 /* Misc */
 strong {
-  color: salmon;
+  color: #fa9938;
   font-weight: normal;
 }
 main {
@@ -60,7 +60,7 @@ header {
   left: 0;
   background-color: white;
   box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.5);
-  border-top: 3px solid #282a35;
+  border-top: 3px solid black;
 }
 header nav ul {
   display: flex;
@@ -72,13 +72,13 @@ header nav ul li {
   white-space: nowrap;
 }
 header nav ul li a {
-  color: #282a35;
+  color: black;
   text-decoration: none;
   font-weight: bold;
   padding-bottom: 3px;
 }
 header nav ul li a:hover {
-  text-decoration: underline salmon;
+  text-decoration: underline solid #fa9938 6.5px;
 }
 /* Main content */
 main .presentation {
@@ -125,7 +125,7 @@ main .projects > .logos {
 }
 main .projects > .logos .logo {
   background-color: white;
-  color: #282a35;
+  color: black;
   box-shadow: -1px 0px 8px 2px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
@@ -134,6 +134,7 @@ main .projects > .logos .logo {
   text-align: justify;
   max-width: 280px;
   height: 530px;
+  border-bottom: 7px solid #fa9938;
 }
 main .projects > .logos .logo .logo-content {
   display: flex;
@@ -148,12 +149,14 @@ main .projects > .logos .logo img {
   height: 150px;
 }
 main .projects > .logos .logo a {
-  color: #282a35;
+  color: black;
 }
 main .projects > .logos .logo .links {
   display: flex;
   justify-content: space-around;
 }
 main .projects > .logos .logo .links :hover {
-  text-decoration: underline salmon;
+  text-decoration: underline solid #fa9938 2px;
+  font-size: 1rem;
+  color: #fa9938;
 }
